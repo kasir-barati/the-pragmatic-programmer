@@ -1,3 +1,19 @@
+# A short brief about ranger
+
+Ranger is a file manager with emphasis on using key board
+
+# Cut a file or director to another place
+
+1. Stay on the file or directory
+2. Press `dd`
+3. Navigate to the target place
+4. Press `pp`
+
+# Delete a file or directory
+
+1. Stay on the file or directory
+2. Press `d+shift+d` and hit enter
+
 # Rename file/directory
 
 1. Stay on the file/directory
