@@ -1,6 +1,7 @@
 # A short brief about ranger
 
-Ranger is a file manager with emphasis on using key board
+- Ranger is a file manager with emphasis on using keyboard.
+- **Important:** please make sure that you caps lock is not turn on. Ranger is case-sensitive
 
 # Cut a file or director to another place
 
