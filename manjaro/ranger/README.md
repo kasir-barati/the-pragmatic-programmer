@@ -3,6 +3,10 @@
 - Ranger is a file manager with emphasis on using keyboard. It goes way beyond the edges, beyond you imagination.
 - **Important:** please make sure that you caps lock is not turn on. Ranger is case-sensitive
 
+# Select multiple file or directory
+
+- Stay on the file/directory and Press `space`
+
 # Cut a file or director to another place
 
 1. Stay on the file or directory
