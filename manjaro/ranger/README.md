@@ -2,6 +2,12 @@
 
 - Ranger is a file manager with emphasis on using keyboard. It goes way beyond the edges, beyond you imagination.
 - **Important:** please make sure that you caps lock is not turn on. Ranger is case-sensitive
+- [A good reference](https://wiki.archlinux.org/title/ranger)
+
+# Show/Hide hidden files/directories
+
+1. Press `Esc`
+2. type `:set show_hidden!`
 
 # Select multiple file or directory
 
