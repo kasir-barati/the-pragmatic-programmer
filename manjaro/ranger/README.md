@@ -4,6 +4,14 @@
 - **Important:** please make sure that you caps lock is not turn on. Ranger is case-sensitive
 - [A good reference](https://wiki.archlinux.org/title/ranger)
 
+# Create new file/directory
+
+1. Press `Esc`
+2. To create
+   - A new directory type `mkdir dir-name`
+   - A new file type `touch file-name.ext`
+   - A file in a directory which does not exists type `my-touch path/to/file-name.ext`
+
 # Show/Hide hidden files/directories
 
 1. Press `Esc`
