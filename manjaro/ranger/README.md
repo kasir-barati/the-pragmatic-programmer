@@ -56,3 +56,8 @@
 1. Go into your directory
 2. Press `zf` and type
 3. Press enter to keep the filtered result
+
+# See selected directory/file size:
+
+1. Stay on it and press `dc`
+2. Read the directory size
