@@ -21,6 +21,16 @@
 
 - Stay on the file/directory and Press `space`
 
+# Copy file/directory name into clipboard
+
+- Stay on the file/directory
+- Press `y.`
+
+# Copy file/directory full path
+
+- Stay on the file/directory
+- Press `yp`
+
 # Cut a file or director to another place
 
 1. Stay on the file or directory
