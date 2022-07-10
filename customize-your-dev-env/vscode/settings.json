@@ -1,0 +1,12 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.banner": "never",
+  "diffEditor.wordWrap": "on",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 70
+}
