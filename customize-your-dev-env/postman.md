@@ -1,7 +1,7 @@
 # Install postman
 
 1.  `wget https://dl.pstmn.io/download/latest/linux64`
-2.  `tar xfz postman.tar.gz`
+2.  `tar xfz postman-linux-x64.tar.gz`
 3.  `sudo mv Postman /opt`
 4.  `cd ~` and `vim .local/share/applications/postman.desktop`
 
