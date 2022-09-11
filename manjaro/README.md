@@ -4,10 +4,13 @@
 2. `/bin/bash manjaro-apps`
 
 # Connect your headphone to the laptop:
-  - `sudo pacman -S pulseaudio-bluetooth`
 
-# Change audio:
+- `sudo pacman -S pulseaudio-bluetooth`
+
+## Change audio:
 
 1. `amixer --card=0`
 2. `amixer -c 0 set Speaker playback 100% unmute`
    - You can change "Speaker" to whatever its name is
+
+- [Config your system to work with bluetooth automatically](https://forum.manjaro.org/t/howto-bluetooth-headphones-paired-but-no-sound-after-a-while/33141)
