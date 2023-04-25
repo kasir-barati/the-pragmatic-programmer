@@ -4,9 +4,13 @@
 2. `/bin/bash manjaro-apps`
 
 # Keyboard layout
+
 1. Press win+d and type `mangaro-setting-manager` and hit enter
 2. Go to "Locale Settings" and "Language Packages" and install your languages
-3. Install [gxkb](https://man.archlinux.org/man/gxkb.1.en) and configure it as it says in its `README.md`
+3. `localectl list-x11-keymap-layouts` to see available layouts
+   - e.x. ir, de, us, etc
+4. `vim ~/.i3/config`
+   - Add this line at the end of it: `exec "setxkbmap -layout us,de,ir -option 'grp:alt_shift_toggle'"`
 
 # Connect your headphone to the laptop:
 
