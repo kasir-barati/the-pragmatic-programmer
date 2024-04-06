@@ -1,29 +1,20 @@
 # General
 
-- English spell checker
-  - Name: Code Spell Checker
-  - Id: streetsidesoftware.code-spell-checker
-  - Description: Spelling checker for source code
-  - Publisher: streetsidesoftware
-  - [VS Marketplace Link](https://open-vsx.org/extension/streetsidesoftware/code-spell-checker)
-- Git
-  - Name: GitLens — Git supercharged
-  - Id: eamodio.gitlens
-  - Description: Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
-  - Publisher: eamodio
-  - [VS Marketplace Link](https://open-vsx.org/extension/eamodio/gitlens)
-- Formatter
-  - Name: Prettier - Code formatter
-  - Id: esbenp.prettier-vscode
-  - Description: Code formatter using prettier
-  - Publisher: esbenp
-  - [VS Marketplace Link](https://open-vsx.org/extension/esbenp/prettier-vscode)
-- Project manager
-  - Name: Project Manager
-  - Id: alefragnani.project-manager
-  - Description: Easily switch between projects
-  - Publisher: alefragnani
-  - [VS Marketplace Link](https://open-vsx.org/extension/alefragnani/project-manager)
+- streetsidesoftware.code-spell-checker
+  - [Marketplace](https://open-vsx.org/extension/streetsidesoftware/code-spell-checker)
+- eamodio.gitlens
+  - [Marketplace](https://open-vsx.org/extension/eamodio/gitlens)
+- esbenp.prettier-vscode
+  - [Marketplace](https://open-vsx.org/extension/esbenp/prettier-vscode)
+- alefragnani.project-manager
+  - [Marketplace](https://open-vsx.org/extension/alefragnani/project-manager)
+- vscode-icons
+  - `ext install vscode-icons-team.vscode-icons`
+  - [VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+- Cody
+  - [Marketplace](https://open-vsx.org/extension/sourcegraph/cody-ai)
+- CodeSnap
+  - [Marketplace](https://open-vsx.org/extension/adpyke/codesnap)
 
 # Extensions for Prisma
 
