@@ -5,6 +5,12 @@
 
 # Keyboard layout
 
+## 1 option
+
+- fcitx: https://youtu.be/lJoXhS4EUJs?si=4jrUJaAyxuSCeEBp
+
+## 2 option
+
 1. Press win+d and type `mangaro-setting-manager` and hit enter
 2. Go to "Locale Settings" and "Language Packages" and install your languages
 3. `localectl list-x11-keymap-layouts` to see available layouts
