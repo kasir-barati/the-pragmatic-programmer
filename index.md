@@ -15,3 +15,17 @@
 - [`my-nest`](./customize-your-dev-env/my-nest.md).
 - [`my-next`](./customize-your-dev-env/my-next.md).
 - [`my-touch`](./customize-your-dev-env/my-touch.md).
+
+## General
+
+- [After installing apps](./general/after-installing-apps.md).
+- [`ffmpeg`](./general/ffmpeg.md).
+- [ssd](./general/ssd.md).
+
+## Manjaro
+
+- [Common stuff](./manjaro/README.md).
+- [Jekyll](./manjaro/jekyll/README.md).
+- [musicplayer moc](./manjaro/musicplayer%20moc/README.md).
+- [pcmanfm](./manjaro/pcmanfm/README.md).
+- [ranger](./manjaro/ranger/README.md).
