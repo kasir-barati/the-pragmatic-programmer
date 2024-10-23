@@ -1,3 +1,7 @@
+> [!CAUTION]
+>
+> DEAD! Use [Vite](https://vite.dev/) or something like that.
+
 # Generate new angular project + prettier`
 
 - This script uses pnpm as package manager by default. No choice for now.

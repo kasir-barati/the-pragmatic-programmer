@@ -1,3 +1,7 @@
+> [!CAUTION]
+>
+> Nowadays I prefer to write tests in Jest and other tools like that to free myself from manually testing my RESTful APIs.
+
 # Install postman
 
 1.  `wget https://dl.pstmn.io/download/latest/linux64`
