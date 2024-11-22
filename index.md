@@ -19,6 +19,7 @@
 ## General
 
 - [After installing apps](./general/after-installing-apps.md).
+- [Work with images](./general/img.md).
 - [`ffmpeg`](./general/ffmpeg.md).
 - [ssd](./general/ssd.md).
 
