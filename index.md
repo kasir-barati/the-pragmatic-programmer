@@ -30,3 +30,8 @@
 - [musicplayer moc](./manjaro/musicplayer%20moc/README.md).
 - [pcmanfm](./manjaro/pcmanfm/README.md).
 - [ranger](./manjaro/ranger/README.md).
+
+## Refactoring
+
+- [Refactoring tips](./refactor/README.md).
+  - [VSCode](./refactor/VSCode.md).
