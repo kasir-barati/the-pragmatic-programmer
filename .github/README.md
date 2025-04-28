@@ -22,6 +22,8 @@
 - [Work with images](../general/img.md).
 - [`ffmpeg`](../general/ffmpeg.md).
 - [ssd](../general/ssd.md).
+- Git
+  - [Squash All Commits](../git/README.md).
 
 ## Manjaro
 
