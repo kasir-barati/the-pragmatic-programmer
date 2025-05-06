@@ -15,3 +15,20 @@ To squash all commits in a branch in a branch before merging it with the main br
    ```bash
    git push --force
    ```
+
+# Change The Username and Email Address
+
+1. You can do it globally:
+
+   ```bash
+   git config --global user.name "New Author Name"
+   git config --global user.email "newauthor@example.com"
+   ```
+
+2. You can do it for a specific repo in `.git/config`:
+
+   ```config
+   [user]
+     name = Your Name
+     email = youremail@yourdomain.com
+   ```
