@@ -1,5 +1,30 @@
 # General
 
+```bash
+code --install-extension alefragnani.project-manager
+code --install-extension apollographql.vscode-apollo
+code --install-extension arturock.gitstash
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension firsttris.vscode-jest-runner
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension graphql.vscode-graphql-syntax
+code --install-extension jonathanlewis.vs-code-gen-mongo-id
+code --install-extension kangping.protobuf
+code --install-extension ms-python.debugpy
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-python.vscode-python-envs
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension netcorext.uuid-generator
+code --install-extension saoudrizwan.claude-dev
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension tamasfe.even-better-toml
+code --install-extension wayou.vscode-todo-highlight
+```
+
 - streetsidesoftware.code-spell-checker
   - [Marketplace](https://open-vsx.org/extension/streetsidesoftware/code-spell-checker)
 - eamodio.gitlens
