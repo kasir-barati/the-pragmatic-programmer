@@ -18,6 +18,7 @@
 
 ## General
 
+- `sudo apt update && sudo apt install zsh git curl -y` and [then](https://ohmyz.sh/#install) -- [VSCode](https://stackoverflow.com/a/65578052/8784518).
 - [After installing apps](../general/after-installing-apps.md).
 - [Work with images](../general/img.md).
 - [`ffmpeg`](../general/ffmpeg.md).
