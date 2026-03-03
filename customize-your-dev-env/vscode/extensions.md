@@ -35,14 +35,32 @@ code --install-extension wallabyjs.quokka-vscode
 <summary>Todo</summary>
 
 ```json
+"todohighlight.isEnable": true,
+"todohighlight.isCaseSensitive": true,
 "todohighlight.keywords": [
     "DEBUG:",
     "REVIEW:",
+    {
+    "text": "README:",
+    "color": "white",
+    "backgroundColor": "#007acc",
+    "borderRadius": "2px",
+    "fontWeight": "bold",
+    "overviewRulerColor": "grey"
+    },
     {
         "text": "NOTE:",
         "color": "black",
         "backgroundColor": "#0b66da",
         "borderRadius": "2px",
+        "fontWeight": "bold",
+        "overviewRulerColor": "grey"
+    },
+    {
+        "text": "IMPORTANT:",
+        "color": "black",
+        "backgroundColor": "#8353dc",
+        "borderRadius": "4px",
         "fontWeight": "bold",
         "overviewRulerColor": "grey"
     },
@@ -55,11 +73,11 @@ code --install-extension wallabyjs.quokka-vscode
         "text": "TODO:",
         "color": "red",
         "border": "1px solid red",
-        "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+        "borderRadius": "2px", // NOTE: using borderRadius along with `border` or you will see nothing change
         "backgroundColor": "rgba(0,0,0,.2)",
         //other styling properties goes here ... 
     }
-]
+],
 ```
 
 </details>
