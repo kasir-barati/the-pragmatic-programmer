@@ -32,7 +32,7 @@ code --install-extension wallabyjs.quokka-vscode
 ## Customize
 
 <details>
-<summary>Todo</summary>
+<summary>Todo config in <code>~/.config/Code/User/settings.json</code></summary>
 
 ```json
 "todohighlight.isEnable": true,
