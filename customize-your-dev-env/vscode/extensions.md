@@ -16,7 +16,6 @@ code --install-extension kangping.protobuf
 code --install-extension ms-python.debugpy
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
-code --install-extension ms-python.vscode-python-envs
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension netcorext.uuid-generator
 code --install-extension saoudrizwan.claude-dev
