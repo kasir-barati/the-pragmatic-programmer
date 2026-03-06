@@ -8,5 +8,7 @@
   "security.workspace.trust.banner": "never",
   "diffEditor.wordWrap": "on",
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 70
+  "editor.wordWrapColumn": 70,
+  "terminal.integrated.scrollback": 100000,
+  "git.autofetch": true
 }
