@@ -35,7 +35,15 @@ I'll give you concrete steps, a minimal `init.lua` to start with, and safe defau
   - `x`: char.
   - `dw`: word.
   - `dd`: line.
-- `p/P` paste.
+- Copy:
+  - Enter visual mode (`Esc + v`).
+  - Select:
+    - Line by line: `j` or `k`.
+    - Word by word: `e`, or `b`.
+    - Character by character: `h` or `l`.
+  - Then copy: `y`.
+    - To **cut** you just need to press `x` instead.
+- Paste: `p/P`.
 - `u` undo (press `Esc` first).
 - `Ctrl + r` redo.
 - `.` repeat last change.
