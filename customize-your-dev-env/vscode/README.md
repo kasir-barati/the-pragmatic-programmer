@@ -6,12 +6,12 @@ Without going "cold turkey." we can stay productive the whole time and build our
 
 ## The Big Picture (phased plan)
 
-**Phase 0 – Stay in VSCode, learn Vim motions (1–3 days)**.
-**Phase 1 – Install Neovim + tiny config (1–2 hours)**.
-**Phase 2 – Add language servers + completion (1–2 hours)**.
-**Phase 3 – Replicate your day‑to‑day (search, Git, formatting, file tree, debugging)**.
-**Phase 4 – Performance tuning + quality‑of‑life**.
-**Phase 5 – 4‑week cutover schedule & escape hatches**.
+- **Phase 0 – Stay in VSCode, learn Vim motions (1–3 days)**.
+- **Phase 1 – Install Neovim + tiny config (1–2 hours)**.
+- **Phase 2 – Add language servers + completion (1–2 hours)**.
+- **Phase 3 – Replicate your day‑to‑day (search, Git, formatting, file tree, debugging)**.
+- **Phase 4 – Performance tuning + quality‑of‑life**.
+- **Phase 5 – 4‑week cutover schedule & escape hatches**.
 
 I'll give you concrete steps, a minimal `init.lua` to start with, and safe defaults. You can adopt each step at your own pace.
 
