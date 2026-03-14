@@ -19,11 +19,25 @@ I'll give you concrete steps, a minimal `init.lua` to start with, and safe defau
 
 ## Phase 0 — Ease in from VS Code (no risk)
 
-1.  **Install VSCodeVim** extension. Keep working in VS Code and start using:
-    *   `h j k l` to move, `w b e` for word motions, `0 ^ $` line jumps.
-    *   `x` delete char, `dw` delete word, `dd` delete line, `p/P` paste.
-    *   `u` undo, `<C-r>` redo, `.` repeat last change.
-2.  Optional but powerful: **vscode-neovim** extension. It embeds a real Neovim instance inside VS Code, so you get Neovim behavior without leaving VS Code. (Requires Neovim installed—coming next.)
+**Install [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)** extension. Keep working in VS Code and start using:
+
+- `shift + 5` jumps to first line & last line.
+- For word motions:
+  - `b`: jump to previous.
+  - `w`: jump to next.
+- To move (first press `Esc` key on your keyword):
+  - `k`: up.
+  - `j`: down.
+  - `h`: left.
+  - `l`L right.
+- Delete:
+  - `x`: char.
+  - `dw`: word.
+  - `dd`: line.
+- `p/P` paste.
+- `u` undo (press `Esc` first).
+- `Ctrl + r` redo.
+- `.` repeat last change.
 
 > This phase lets you get comfortable with modes and motions while your editor stays familiar.
 
