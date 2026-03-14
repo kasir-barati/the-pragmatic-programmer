@@ -22,6 +22,7 @@ I'll give you concrete steps, a minimal `init.lua` to start with, and safe defau
 **Install [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)** extension. Keep working in VS Code and start using:
 
 - `shift + 5` jumps to first line & last line.
+- `:112` to jump to line 112.
 - For word motions:
   - `b`: jump to previous.
   - `w`: jump to next.
@@ -38,6 +39,7 @@ I'll give you concrete steps, a minimal `init.lua` to start with, and safe defau
 - `u` undo (press `Esc` first).
 - `Ctrl + r` redo.
 - `.` repeat last change.
+- `:tabc` to close the tab.
 
 > This phase lets you get comfortable with modes and motions while your editor stays familiar.
 
