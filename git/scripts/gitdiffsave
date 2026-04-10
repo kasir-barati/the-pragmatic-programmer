@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Exit on error
+set -e
+
+# --- Validate input ---
+if [ -z "$1" ]; then
+    echo "❌ Error: No filename provided."
+    echo "Usage: gitdiffsave <output-file>"
+    exit 1
+fi
+
+OUTFILE="$1"
+
+# --- Check if we are inside a git repo ---
+if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    echo "❌ Error: This directory is not inside a git repository."
+    exit 2
+fi
+
+# --- Create diff and store it ---
+git diff > "$OUTFILE"
+
+echo "✅ Git diff saved to: $OUTFILE"
