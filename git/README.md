@@ -1,3 +1,10 @@
+# Saving Git Diffs to a File
+
+```shell
+chmod +x git/scripts/gitdiffsave # might NOT be necessary since I have done it already
+sudo cp git/scripts/gitdiffsave /usr/local/bin/
+```
+
 # Squash All Commits
 
 To squash all commits in a branch in a branch before merging it with the main branch you can:

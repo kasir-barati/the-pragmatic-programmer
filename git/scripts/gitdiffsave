@@ -1,24 +1,77 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python3
 
-# Exit on error
-set -e
+import sys
+import subprocess
+import argparse
 
-# --- Validate input ---
-if [ -z "$1" ]; then
-    echo "❌ Error: No filename provided."
-    echo "Usage: gitdiffsave <output-file>"
-    exit 1
-fi
+def run(cmd):
+    return subprocess.run(cmd, shell=False, capture_output=True, text=True)
 
-OUTFILE="$1"
+def main():
+    parser = argparse.ArgumentParser(
+        prog="gitdiffsave",
+        description="Save git diffs from N commits ago up to HEAD into a file.",
+        epilog="""Examples:
+  gitdiffsave 1 diff.txt     # diff between HEAD~1 and HEAD
+  gitdiffsave 5 out.patch    # diff of last 5 commits into out.patch
+  gitdiffsave 2 /tmp/d.patch # write diff to /tmp
+""",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
 
-# --- Check if we are inside a git repo ---
-if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-    echo "❌ Error: This directory is not inside a git repository."
-    exit 2
-fi
+    parser.add_argument(
+        "commits",
+        type=int,
+        help="How many commits back from HEAD to include in the diff (positive integer)."
+    )
 
-# --- Create diff and store it ---
-git diff > "$OUTFILE"
+    parser.add_argument(
+        "outfile",
+        help="Output file where the diff will be stored."
+    )
 
-echo "✅ Git diff saved to: $OUTFILE"
+    args = parser.parse_args()
+
+    num_commits = args.commits
+    outfile = args.outfile
+
+    if num_commits < 1:
+        print("❌ Error: number-of-commits must be a positive integer.")
+        sys.exit(1)
+
+    # Check if inside a git repo
+    check = run(["git", "rev-parse", "--is-inside-work-tree"])
+    if check.returncode != 0:
+        print("❌ Error: This directory is not inside a git repository.")
+        sys.exit(2)
+
+    # Latest commit
+    latest = run(["git", "rev-parse", "HEAD"])
+    if latest.returncode != 0:
+        print("❌ Error: Could not find latest commit.")
+        sys.exit(3)
+
+    latest_hash = latest.stdout.strip()
+
+    # Target commit N commits back
+    target = run(["git", "rev-parse", f"HEAD~{num_commits}"])
+    if target.returncode != 0:
+        print(f"❌ Error: Could not resolve HEAD~{num_commits}. Too few commits?")
+        sys.exit(4)
+
+    target_hash = target.stdout.strip()
+
+    # Diff generation
+    diff = run(["git", "diff", target_hash, latest_hash])
+    if diff.returncode != 0:
+        print("❌ Error: Failed to generate diff.")
+        sys.exit(5)
+
+    # Write to file
+    with open(outfile, "w", encoding="utf-8") as f:
+        f.write(diff.stdout)
+
+    print(f"✅ Git diff from {target_hash} → {latest_hash} saved to '{outfile}'")
+
+if __name__ == "__main__":
+    main()
