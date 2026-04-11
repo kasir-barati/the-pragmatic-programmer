@@ -1,0 +1,14 @@
+{
+  "name": "the-pragmatic-programmer",
+  "scripts": {
+    "format": "prettier -w -u .",
+    "prepare": "husky || true"
+  },
+  "keywords": [],
+  "author": "Kasir Barati",
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.8.2"
+  }
+}

@@ -82,7 +82,7 @@ code --install-extension wallabyjs.quokka-vscode
       "border": "1px solid red",
       "borderRadius": "2px", // NOTE: using borderRadius along with `border` or you will see nothing change
       "backgroundColor": "rgba(0,0,0,.2)",
-      //other styling properties goes here ... 
+      // other styling properties goes here ...
   }
 ],
 ```
