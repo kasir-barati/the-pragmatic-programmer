@@ -18,7 +18,6 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension netcorext.uuid-generator
-code --install-extension saoudrizwan.claude-dev
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension tamasfe.even-better-toml
 code --install-extension wayou.vscode-todo-highlight
