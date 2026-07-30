@@ -5,6 +5,6 @@
   ```shell
   touch cleanup.sh
   # Now copy and paste the content in it.
-  chmod +x cleaup.sh
+  chmod +x cleanup.sh
   sudo mv cleanup.sh /usr/local/bin/cleanup
   ```
