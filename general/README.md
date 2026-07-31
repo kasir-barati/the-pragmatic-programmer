@@ -8,7 +8,7 @@
   chmod +x cleanup.sh
   sudo mv cleanup.sh /usr/local/bin/cleanup
   ```
-- [Change the commit of last commits](./change-git-commits-email.sh):
+- [Change the email address of n last commits](./change-git-commits-email.sh):
   ```shell
   touch change-git-commits-email.sh
   chmod +x change-git-commits-email.sh
