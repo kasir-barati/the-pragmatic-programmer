@@ -2,8 +2,33 @@
 
 set -euo pipefail
 
+usage() {
+    cat <<EOF
+Usage:
+    $(basename "$0") <number_of_commits> <new_email>
+
+Examples:
+    $(basename "$0") 5 john@example.com
+    $(basename "$0") 10 jane@example.com
+
+Description:
+    Rewrites the last N commits and changes the author and
+    committer email address to the specified email.
+
+Warning:
+    This rewrites Git history.
+EOF
+}
+
+case "${1:-}" in
+    -h|--help)
+        usage
+        exit 0
+        ;;
+esac
+
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <number_of_commits> <new_email>"
+    usage
     exit 1
 fi
 
