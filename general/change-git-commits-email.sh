@@ -2,12 +2,6 @@
 
 set -euo pipefail
 
-if ! git filter-repo --version >/dev/null 2>&1; then
-    echo "Error: git-filter-repo is not installed or not available in PATH. You can install it on"
-    echo "Ubuntu: sudo apt update && sudo apt install git-filter-repo"
-    exit 1
-fi
-
 usage() {
     cat <<EOF
 Usage:
@@ -41,9 +35,26 @@ fi
 NUM_COMMITS="$1"
 NEW_EMAIL="$2"
 
-git filter-repo --force \
-    --commit-callback "
-if commit.original_id in [c.original_id for c in repo.get_commits('HEAD~${NUM_COMMITS}..HEAD')]:
-    commit.author_email = b'$NEW_EMAIL'
-    commit.committer_email = b'$NEW_EMAIL'
-"
+git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
+    echo "Error: not inside a Git repository."
+    exit 1
+}
+
+git rebase -x "
+CURRENT_NAME=\$(git show -s --format='%an')
+CURRENT_EMAIL=\$(git show -s --format='%ae')
+
+if [ \"\$CURRENT_EMAIL\" != \"$NEW_EMAIL\" ]; then
+    git commit --amend --no-edit \
+        --author=\"\$CURRENT_NAME <$NEW_EMAIL>\"
+fi
+" HEAD~"$NUM_COMMITS"
+
+echo
+echo "✅ Updated email address in the last $NUM_COMMITS commits."
+echo
+echo "Verify with:"
+echo "  git log --format='%h %an <%ae>' -n $NUM_COMMITS"
+echo
+echo "If already pushed:"
+echo "  git push --force-with-lease"
