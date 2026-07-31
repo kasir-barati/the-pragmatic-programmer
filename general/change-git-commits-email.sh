@@ -40,15 +40,7 @@ git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
     exit 1
 }
 
-git rebase -x "
-CURRENT_NAME=\$(git show -s --format='%an')
-CURRENT_EMAIL=\$(git show -s --format='%ae')
-
-if [ \"\$CURRENT_EMAIL\" != \"$NEW_EMAIL\" ]; then
-    git commit --amend --no-edit \
-        --author=\"\$CURRENT_NAME <$NEW_EMAIL>\"
-fi
-" HEAD~"$NUM_COMMITS"
+git rebase -x "git commit --amend --no-edit --author=\"\$(git show -s --format='%an') <$NEW_EMAIL>\"" HEAD~"$NUM_COMMITS"
 
 echo
 echo "✅ Updated email address in the last $NUM_COMMITS commits."
