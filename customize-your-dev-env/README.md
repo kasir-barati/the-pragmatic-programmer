@@ -7,6 +7,6 @@
    alias dcd='docker compose down -v'
    alias dcu='docker compose up --build -d'
    alias fcount='ls -1 | wc -l' # File count
-   alias rfcount='find . -type f | wc -l' # Recursive file count
+   alias rfcount='find . | wc -l' # Recursive file count which counts Regular files, Directories (as items), Hidden files, Symlinks.
    ```
 3. Save it and then `source ~/.bashrc`/`source ~/.zshrc`.
