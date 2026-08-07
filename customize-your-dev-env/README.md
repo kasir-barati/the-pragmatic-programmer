@@ -1,5 +1,11 @@
 # Customize your Dev Env
 
+```
+sudo apt install gpaste-2 -y
+```
+
+## Custom Aliases
+
 1. Open `~/.bashrc`/`~/.zshrc`:
 2. Add the following:
    ```bash
