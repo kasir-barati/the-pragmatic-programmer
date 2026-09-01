@@ -14,3 +14,4 @@
   chmod +x change-git-commits-email.sh
   sudo mv change-git-commits-email.sh /usr/local/bin/change-git-commits-email
   ```
+- [Kubernetese](./k8s.md).
