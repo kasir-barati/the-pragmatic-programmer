@@ -13,6 +13,12 @@
    - Make VirtualBox your default driver: `minikube config set driver virtualbox`
    - You can also try to configure it to start on bootstrap: https://joepreludian.medium.com/how-to-start-up-minikube-automatically-via-system-d-2cad99fd79bf
 
+> [!TIP]
+>
+> So if you encountered this warning: `❗  /usr/local/bin/kubectl is version 1.37.0, which may have incompatibilities with Kubernetes 1.35.1.`
+>
+> You can still try to use your `kubectl`, but in case there were weird API issues please feel free to use: `minikube kubectl -- get pods -A`.
+
 ### Check Minikube Works
 
 1. Open the Oracle VirtualBox and make sure you have virual machine for Minikube:
