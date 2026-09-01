@@ -9,6 +9,9 @@
    1. Download it for your Linux distro: https://www.virtualbox.org/wiki/Linux_Downloads.
    2. Then install it.
 3. https://minikube.sigs.k8s.io/docs/start.
+   - Here it is documented how to start the app with VirtualBox as its driver: https://minikube.sigs.k8s.io/docs/drivers/virtualbox/
+   - Make VirtualBox your default driver: `minikube config set driver virtualbox`
+   - You can also try to configure it to start on bootstrap: https://joepreludian.medium.com/how-to-start-up-minikube-automatically-via-system-d-2cad99fd79bf
 
 ### Check Minikube Works
 
