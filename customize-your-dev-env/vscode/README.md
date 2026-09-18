@@ -1,5 +1,37 @@
 # Move from VSCode to Neovim
 
+> [!CAUTION]
+>
+> I had to still keep using VSCode for Jupyter Notebook. So I disabled quite a lot of its features in `~/.config/Code/User/settings.json`:
+> ```json
+>   "files.watcherExclude": {
+>    "**/node_modules/**": true,
+>    "**/.git/**": true,
+>    "**/dist/**": true,
+>    "**/build/**": true,
+>    "**/.vscode/**": true,
+>    "**/__pycache__/**": true
+>  },
+>  "search.exclude": {
+>    "**/node_modules": true,
+>    "**/dist": true,
+>    "**/build": true,
+>    "**/.next": true,
+>        "**/.git": true,
+>    "**/__pycache__": true,
+>    "**/.DS_Store": true
+>  },
+>  "editor.minimap.enabled": false,
+>  "editor.codeLens": false,
+>  "workbench.statusBar.visible": false,
+>  "js/ts.validate.enabled": false,
+>  "editor.undoStackSize": 1000,
+>  "workbench.activityBar.location": "hidden",
+>  "workbench.editor.showTabs": "single",
+>  "workbench.editor.enablePreview": false,
+>  "git.enabled": false,
+> ```
+
 > [!TIP]
 >
 > Use https://vim-adventures.com/ to first build your muscle memory and learn the basics while enjoying your time.
