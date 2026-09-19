@@ -1,3 +1,7 @@
+> [!TIP]
+>
+> With the rise of LLMs and agents I feel the necessity of writing it here. You need to have your [sidekick](https://github.com/ed-donner/agents/blob/8c11810b46412d61dfea250dea77dde71cd71fd8/4_langchain_langgraph/5_lab5.ipynb) which essentially will do some chores on your behalf in the background while you are working on something else. It is gonna have its own planning, reasoning and can notify you when it is done.
+
 ## Customize your dev env
 
 - [`pnpm` config](../customize-your-dev-env/pnpm/config.md).
